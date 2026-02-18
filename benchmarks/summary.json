@@ -1,0 +1,15 @@
+{
+  "runtime": [
+    "AsyncTests",
+    "DataDrivenTests",
+    "MassiveParallelTests",
+    "MatrixTests",
+    "ScaleTests",
+    "SetupTeardownTests"
+  ],
+  "build": [
+    "BuildTime"
+  ],
+  "timestamp": "2026-02-18",
+  "environment": "Ubuntu Latest • .NET SDK 10.0.103"
+}
