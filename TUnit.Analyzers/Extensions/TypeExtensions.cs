@@ -101,8 +101,8 @@ public static class TypeExtensions
             : namedTypeSymbol.AllInterfaces.AsEnumerable();
 
         foreach (var enumerable in interfaces
-                     .Where(x => x.IsGenericType)
-                     .Where(x => SymbolEqualityComparer.Default.Equals(x.OriginalDefinition, compilation.GetSpecialType(SpecialType.System_Collections_Generic_IEnumerable_T))))
+                     .Where(x => x.IsGenericType &&
+                                 SymbolEqualityComparer.Default.Equals(x.OriginalDefinition, compilation.GetSpecialType(SpecialType.System_Collections_Generic_IEnumerable_T))))
         {
             innerType = enumerable.TypeArguments[0];
             return true;

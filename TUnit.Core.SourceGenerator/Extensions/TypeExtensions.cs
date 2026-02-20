@@ -112,8 +112,8 @@ public static class TypeExtensions
         var enumerableT = compilation.GetSpecialType(SpecialType.System_Collections_Generic_IEnumerable_T);
 
         foreach (var enumerable in interfaces
-                     .Where(x => x.IsGenericType)
-                     .Where(x => SymbolEqualityComparer.Default.Equals(x.OriginalDefinition, enumerableT)))
+                     .Where(x => x.IsGenericType &&
+                                 SymbolEqualityComparer.Default.Equals(x.OriginalDefinition, enumerableT)))
         {
             innerType = enumerable.TypeArguments[0];
             return true;

@@ -36,17 +36,20 @@ public class PublicMethodMissingTestAttributeAnalyzer : ConcurrentDiagnosticAnal
         // event accessors (EventAdd/EventRemove), constructors, destructors, operators,
         // and other compiler-generated method kinds.
         foreach (var method in methods
-                     .Where(x => x.MethodKind == MethodKind.Ordinary)
-                     .Where(x => !x.IsAbstract)
-                     .Where(x => !x.IsStatic)
-                     .Where(x => !x.IsOverride)
-                     .Where(x => x.DeclaredAccessibility == Accessibility.Public)
-                     .Where(x => !x.IsTestMethod(context.Compilation))
-                     .Where(x => !x.IsStandardHookMethod(context.Compilation, out _, out _, out _))
-                     .Where(x => !IsDisposableDispose(x))
-                     .Where(x => !IsAsyncDisposableDispose(x))
-                     .Where(x => !IsInitializeAsync(x))
-                     .Where(x => !IsTestDataSource(x, testMethods)))
+                     .Where(x => x.MethodKind == MethodKind.Ordinary &&
+                                 x is
+                                 {
+                                     IsAbstract: false,
+                                     IsStatic: false,
+                                     IsOverride: false,
+                                     DeclaredAccessibility: Accessibility.Public
+                                 } &&
+                                 !x.IsTestMethod(context.Compilation) &&
+                                 !x.IsStandardHookMethod(context.Compilation, out _, out _, out _) &&
+                                 !IsDisposableDispose(x) &&
+                                 !IsAsyncDisposableDispose(x) &&
+                                 !IsInitializeAsync(x) &&
+                                 !IsTestDataSource(x, testMethods)))
         {
             context.ReportDiagnostic(Diagnostic.Create(Rules.PublicMethodMissingTestAttribute, method.Locations.FirstOrDefault()));
         }
