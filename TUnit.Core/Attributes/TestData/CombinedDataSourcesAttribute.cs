@@ -167,17 +167,7 @@ public sealed class CombinedDataSourcesAttribute : AsyncUntypedDataSourceGenerat
             }
 
             // Create metadata for this single parameter
-            var singleParamMetadata = new DataGeneratorMetadata
-            {
-                TestBuilderContext = dataGeneratorMetadata.TestBuilderContext,
-                MembersToGenerate = [parameterMetadata],
-                TestInformation = dataGeneratorMetadata.TestInformation,
-                Type = dataGeneratorMetadata.Type,
-                TestSessionId = dataGeneratorMetadata.TestSessionId,
-                TestClassInstance = dataGeneratorMetadata.TestClassInstance,
-                ClassInstanceArguments = dataGeneratorMetadata.ClassInstanceArguments,
-                InstanceFactory = dataGeneratorMetadata.InstanceFactory
-            };
+            var singleParamMetadata = dataGeneratorMetadata with {MembersToGenerate = [parameterMetadata]};
 
             // Get data rows from this data source (need to await async enumerable)
             var dataRows = await ProcessDataSourceAsync(dataSourceAttr, singleParamMetadata);

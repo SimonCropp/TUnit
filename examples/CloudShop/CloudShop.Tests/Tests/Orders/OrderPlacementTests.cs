@@ -70,7 +70,7 @@ public class OrderPlacementTests
         var request = template with
         {
             Items = template.Items.Select(item =>
-                new OrderItemRequest(productMap[item.ProductId], item.Quantity)).ToList()
+                item with {ProductId = productMap[item.ProductId]}).ToList()
         };
 
         var response = await Customer.Client.PostAsJsonAsync("/api/orders", request);
