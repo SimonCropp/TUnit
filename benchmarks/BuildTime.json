@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-02-21T00:35:05.243Z",
+  "timestamp": "2026-02-23T00:36:36.336Z",
   "category": "BuildTime",
   "environment": {
     "benchmarkDotNetVersion": "BenchmarkDotNet v0.15.8, Linux Ubuntu 24.04.3 LTS (Noble Numbat)",
@@ -9,35 +9,35 @@
   "results": [
     {
       "Method": "Build_TUnit",
-      "Version": "1.16.4",
-      "Mean": "2.220 s",
-      "Error": "0.0416 s",
-      "StdDev": "0.0389 s",
-      "Median": "2.219 s"
+      "Version": "1.17.7",
+      "Mean": "2.279 s",
+      "Error": "0.0385 s",
+      "StdDev": "0.0360 s",
+      "Median": "2.271 s"
     },
     {
       "Method": "Build_NUnit",
       "Version": "4.5.0",
-      "Mean": "1.796 s",
-      "Error": "0.0236 s",
-      "StdDev": "0.0220 s",
-      "Median": "1.800 s"
+      "Mean": "1.829 s",
+      "Error": "0.0191 s",
+      "StdDev": "0.0149 s",
+      "Median": "1.831 s"
     },
     {
       "Method": "Build_MSTest",
       "Version": "4.1.0",
-      "Mean": "1.901 s",
-      "Error": "0.0266 s",
-      "StdDev": "0.0235 s",
-      "Median": "1.906 s"
+      "Mean": "1.897 s",
+      "Error": "0.0209 s",
+      "StdDev": "0.0186 s",
+      "Median": "1.899 s"
     },
     {
       "Method": "Build_xUnit3",
       "Version": "3.2.2",
-      "Mean": "1.842 s",
-      "Error": "0.0111 s",
-      "StdDev": "0.0099 s",
-      "Median": "1.841 s"
+      "Mean": "1.831 s",
+      "Error": "0.0169 s",
+      "StdDev": "0.0158 s",
+      "Median": "1.830 s"
     }
   ]
 }
