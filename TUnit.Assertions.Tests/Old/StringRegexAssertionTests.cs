@@ -263,11 +263,7 @@ public partial class StringRegexAssertionTests
     public async Task DoesNotMatch_WithTimeoutPattern_Throws(Type exceptionType, string pattern, string text)
     {
         // Create regex with a short timeout
-#if NET8_0_OR_GREATER
-            var timeout = TimeSpan.FromMicroseconds(1);
-#else
-        var timeout = TimeSpan.FromTicks(1);
-#endif
+        var timeout = TimeSpan.FromMicroseconds(1);
         var regex = new Regex(pattern, RegexOptions.None, timeout);
 
         Func<Task> action = async () => await TUnitAssert.That(text).DoesNotMatch(regex);

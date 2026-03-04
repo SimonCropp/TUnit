@@ -36,11 +36,7 @@ public class TestsBase<TGenerator> where TGenerator : IIncrementalGenerator, new
 
     public async Task RunTest(string inputFile, RunTestOptions runTestOptions, Func<string[], Task> assertions)
     {
-#if NET
         var source = await File.ReadAllTextAsync(inputFile);
-#else
-        var source = File.ReadAllText(inputFile);
-#endif
 
         var customAttributes = Sourcy.Git.RootDirectory
             .GetDirectory("TUnit.TestProject")
@@ -79,11 +75,7 @@ public class TestsBase<TGenerator> where TGenerator : IIncrementalGenerator, new
 
             public class UnconditionalSuppressMessageAttribute : Attribute;
             """,
-#if NET
             ..await Task.WhenAll(runTestOptions.AdditionalFiles.Select(x => File.ReadAllTextAsync(x))),
-#else
-            ..runTestOptions.AdditionalFiles.Select(x => File.ReadAllText(x)),
-#endif
             ..runTestOptions.AdditionalSyntaxes,
         ];
 
