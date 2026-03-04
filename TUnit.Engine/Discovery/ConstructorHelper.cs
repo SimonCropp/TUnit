@@ -12,9 +12,7 @@ internal static class ConstructorHelper
     /// <summary>
     /// Finds a suitable constructor for a test class, preferring ones marked with [TestConstructor]
     /// </summary>
-#if NET6_0_OR_GREATER
     [RequiresUnreferencedCode("Constructor discovery requires reflection on constructors and attributes")]
-#endif
     public static ConstructorInfo? FindSuitableConstructor(
         [DynamicallyAccessedMembers(DynamicallyAccessedMemberTypes.PublicConstructors | DynamicallyAccessedMemberTypes.NonPublicConstructors)] Type testClass,
         Attribute[] classAttributes)
@@ -36,9 +34,7 @@ internal static class ConstructorHelper
     /// <summary>
     /// Creates an instance of a test class with proper constructor parameter handling
     /// </summary>
-#if NET6_0_OR_GREATER
     [RequiresUnreferencedCode("Test instance creation uses ConstructorInfo.Invoke and Activator.CreateInstance")]
-#endif
     public static object? CreateTestClassInstanceWithConstructor(
         [DynamicallyAccessedMembers(DynamicallyAccessedMemberTypes.PublicConstructors | DynamicallyAccessedMemberTypes.NonPublicConstructors)] Type testClass,
         ConstructorInfo? constructor,
@@ -113,9 +109,7 @@ internal static class ConstructorHelper
     /// <summary>
     /// Checks if a type has required properties that need initialization
     /// </summary>
-#if NET6_0_OR_GREATER
     [RequiresUnreferencedCode("Required property detection uses reflection on properties and attributes")]
-#endif
     public static bool HasRequiredProperties([DynamicallyAccessedMembers(DynamicallyAccessedMemberTypes.PublicProperties)] Type type)
     {
         // Check if the type itself has RequiredMemberAttribute (indicates it has required properties)
@@ -132,9 +126,7 @@ internal static class ConstructorHelper
     /// <summary>
     /// Tries to initialize required properties on an instance
     /// </summary>
-#if NET6_0_OR_GREATER
     [RequiresUnreferencedCode("Property initialization uses reflection on properties and their types")]
-#endif
     public static void InitializeRequiredProperties(
         object instance,
         [DynamicallyAccessedMembers(DynamicallyAccessedMemberTypes.PublicProperties)] Type type)
@@ -229,9 +221,7 @@ internal static class ConstructorHelper
     /// <summary>
     /// AOT-safe wrapper for Activator.CreateInstance with proper attribution
     /// </summary>
-#if NET6_0_OR_GREATER
     [RequiresUnreferencedCode("Activator.CreateInstance requires reflection")]
-#endif
     private static object? CreateInstanceSafely([DynamicallyAccessedMembers(DynamicallyAccessedMemberTypes.PublicParameterlessConstructor)] Type type)
     {
         return Activator.CreateInstance(type);

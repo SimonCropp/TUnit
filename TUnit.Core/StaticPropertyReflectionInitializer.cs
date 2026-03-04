@@ -8,9 +8,7 @@ namespace TUnit.Core;
 /// <summary>
 /// Handles initialization of static properties with data sources in reflection mode
 /// </summary>
-#if NET6_0_OR_GREATER
 [RequiresUnreferencedCode("Reflection mode requires dynamic access for static property initialization")]
-#endif
 public static class StaticPropertyReflectionInitializer
 {
     private static readonly ConcurrentDictionary<Type, bool> _initializedTypes = new();
@@ -18,9 +16,7 @@ public static class StaticPropertyReflectionInitializer
     /// <summary>
     /// Initializes static properties with data sources for all loaded types
     /// </summary>
-#if NET6_0_OR_GREATER
     [RequiresUnreferencedCode("Data source initialization may require dynamic code generation")]
-#endif
     public static async Task InitializeAllStaticPropertiesAsync()
     {
         var assemblies = AppDomain.CurrentDomain.GetAssemblies()
@@ -49,9 +45,7 @@ public static class StaticPropertyReflectionInitializer
     /// <summary>
     /// Initializes static properties with data sources for a specific type
     /// </summary>
-#if NET6_0_OR_GREATER
     [RequiresUnreferencedCode("Data source initialization may require dynamic code generation")]
-#endif
     public static async Task InitializeStaticPropertiesForType(Type type)
     {
         // Skip if already initialized
@@ -84,9 +78,7 @@ public static class StaticPropertyReflectionInitializer
             .Any(attr => attr is IDataSourceAttribute);
     }
 
-#if NET6_0_OR_GREATER
     [RequiresUnreferencedCode("Data source initialization may require dynamic code generation")]
-#endif
     private static async Task InitializeStaticProperty(Type type, PropertyInfo property)
     {
         if (property.GetCustomAttributes()

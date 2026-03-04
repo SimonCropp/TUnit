@@ -162,9 +162,7 @@ internal sealed class ReflectionHookDiscoveryService
         }
     }
 
-    #if NET6_0_OR_GREATER
     [RequiresUnreferencedCode("Hook discovery scans assemblies and types using reflection")]
-    #endif
     public static void DiscoverHooks()
     {
         // Prevent running hook discovery multiple times in the same process

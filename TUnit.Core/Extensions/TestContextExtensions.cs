@@ -85,9 +85,7 @@ public static class TestContextExtensions
         return prefix != null ? $"{prefix}+{type.Name}" : type.Name;
     }
 
-    #if NET6_0_OR_GREATER
     [RequiresUnreferencedCode("Dynamic test metadata creation uses reflection")]
-    #endif
     public static async Task AddDynamicTest<[DynamicallyAccessedMembers(
         DynamicallyAccessedMemberTypes.PublicConstructors
         | DynamicallyAccessedMemberTypes.NonPublicConstructors
@@ -111,9 +109,7 @@ public static class TestContextExtensions
     /// <param name="relationship">The relationship category of this variant to its parent test (defaults to Derived)</param>
     /// <param name="displayName">Optional user-facing display name for the variant (e.g., "Shrink Attempt", "Mutant")</param>
     /// <returns>A task that completes when the variant has been queued</returns>
-    #if NET6_0_OR_GREATER
     [RequiresUnreferencedCode("Creating test variants requires runtime compilation and reflection")]
-    #endif
     public static async Task CreateTestVariant(
         this TestContext context,
         object?[]? arguments = null,

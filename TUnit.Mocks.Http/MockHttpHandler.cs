@@ -167,10 +167,7 @@ public sealed class MockHttpHandler : HttpMessageHandler
     {
         var originalContentType = request.Content?.Headers.ContentType;
         var bodyContent = request.Content != null
-            ? await request.Content.ReadAsStringAsync(
-#if NET8_0_OR_GREATER
-                cancellationToken
-#endif
+            ? await request.Content.ReadAsStringAsync(cancellationToken
             ).ConfigureAwait(false)
             : null;
 

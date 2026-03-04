@@ -25,11 +25,7 @@ public class IsDefinedAssertion<TEnum> : Assertion<TEnum>
             return Task.FromResult(AssertionResult.Failed($"threw {exception.GetType().Name}: {exception.Message}"));
         }
 
-#if NET
         if (Enum.IsDefined(value))
-#else
-        if (Enum.IsDefined(typeof(TEnum), value))
-#endif
         {
             return AssertionResult._passedTask;
         }
@@ -62,11 +58,7 @@ public class IsNotDefinedAssertion<TEnum> : Assertion<TEnum>
             return Task.FromResult(AssertionResult.Failed($"threw {exception.GetType().Name}: {exception.Message}"));
         }
 
-#if NET
         if (!Enum.IsDefined(value))
-#else
-        if (!Enum.IsDefined(typeof(TEnum), value))
-#endif
         {
             return AssertionResult._passedTask;
         }

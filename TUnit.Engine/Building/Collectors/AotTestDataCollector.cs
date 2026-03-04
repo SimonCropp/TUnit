@@ -285,9 +285,7 @@ internal sealed class AotTestDataCollector : ITestDataCollector
         }
     }
 
-    #if NET6_0_OR_GREATER
     [RequiresUnreferencedCode("Dynamic test conversion requires expression compilation")]
-    #endif
     private async IAsyncEnumerable<TestMetadata> ConvertDynamicTestToMetadataStreaming(
         AbstractDynamicTest abstractDynamicTest,
         [EnumeratorCancellation] CancellationToken cancellationToken = default)
@@ -304,9 +302,7 @@ internal sealed class AotTestDataCollector : ITestDataCollector
         }
     }
 
-    #if NET6_0_OR_GREATER
     [RequiresUnreferencedCode("Dynamic test metadata creation requires expression extraction and reflection")]
-    #endif
     private Task<TestMetadata> CreateMetadataFromDynamicDiscoveryResult(DynamicDiscoveryResult result)
     {
         if (result.TestClassType == null || result.TestMethod == null)
@@ -404,9 +400,7 @@ internal sealed class AotTestDataCollector : ITestDataCollector
         };
     }
 
-    #if NET6_0_OR_GREATER
     [RequiresUnreferencedCode("Dynamic test invocation requires LambdaExpression.Compile")]
-    #endif
     private static Func<object, object?[], Task> CreateAotDynamicTestInvoker(DynamicDiscoveryResult result)
     {
         return async (instance, args) =>
@@ -462,9 +456,7 @@ internal sealed class AotTestDataCollector : ITestDataCollector
         };
     }
 
-    #if NET6_0_OR_GREATER
     [RequiresUnreferencedCode("Failed metadata creation accesses Type.Name and assembly info")]
-    #endif
     private static TestMetadata CreateFailedTestMetadataForDynamicSource(IDynamicTestSource source, Exception ex)
     {
         var testName = $"[DYNAMIC SOURCE FAILED] {source.GetType().Name}";
@@ -484,9 +476,7 @@ internal sealed class AotTestDataCollector : ITestDataCollector
         };
     }
 
-    #if NET6_0_OR_GREATER
     [RequiresUnreferencedCode("Dummy metadata creation accesses type and assembly information")]
-    #endif
     private static MethodMetadata CreateDummyMethodMetadata(Type type, string methodName)
     {
         return new MethodMetadata
