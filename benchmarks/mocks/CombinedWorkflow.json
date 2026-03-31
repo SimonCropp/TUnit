@@ -1,0 +1,66 @@
+{
+  "timestamp": "2026-03-31T03:22:46.140Z",
+  "category": "CombinedWorkflow",
+  "description": "Full workflow: create → setup → invoke → verify",
+  "environment": {
+    "benchmarkDotNetVersion": "BenchmarkDotNet v0.15.8, Linux Ubuntu 24.04.4 LTS (Noble Numbat)",
+    "sdk": ".NET SDK 10.0.201",
+    "host": ".NET 10.0.5 (10.0.5, 10.0.526.15411), X64 RyuJIT x86-64-v3"
+  },
+  "results": [
+    {
+      "Method": "TUnit.Mocks",
+      "Mean": "1.927 μs",
+      "Error": "0.0234 μs",
+      "StdDev": "0.0219 μs",
+      "Gen0": "0.3815",
+      "Gen1": "0.0038",
+      "Allocated": "6.26 KB"
+    },
+    {
+      "Method": "Imposter",
+      "Mean": "2.695 μs",
+      "Error": "0.0516 μs",
+      "StdDev": "0.0507 μs",
+      "Gen0": "0.9613",
+      "Gen1": "0.0458",
+      "Allocated": "15.71 KB"
+    },
+    {
+      "Method": "Mockolate",
+      "Mean": "2.404 μs",
+      "Error": "0.0300 μs",
+      "StdDev": "0.0281 μs",
+      "Gen0": "0.4234",
+      "Gen1": "0.0038",
+      "Allocated": "6.95 KB"
+    },
+    {
+      "Method": "Moq",
+      "Mean": "405.221 μs",
+      "Error": "2.3487 μs",
+      "StdDev": "2.1970 μs",
+      "Gen0": "1.9531",
+      "Gen1": "0.9766",
+      "Allocated": "36.35 KB"
+    },
+    {
+      "Method": "NSubstitute",
+      "Mean": "17.325 μs",
+      "Error": "0.1934 μs",
+      "StdDev": "0.1809 μs",
+      "Gen0": "1.6174",
+      "Gen1": "0.0305",
+      "Allocated": "26.72 KB"
+    },
+    {
+      "Method": "FakeItEasy",
+      "Mean": "17.442 μs",
+      "Error": "0.2778 μs",
+      "StdDev": "0.2463 μs",
+      "Gen0": "1.4648",
+      "Gen1": "0.1221",
+      "Allocated": "25.52 KB"
+    }
+  ]
+}

@@ -9103,7 +9103,7 @@ public async Task Record_Properties()
 # AsyncTests Benchmark
 
 :::info Last Updated
-This benchmark was automatically generated on **2026-03-22** from the latest CI run.
+This benchmark was automatically generated on **2026-03-31** from the latest CI run.
 
 **Environment:** Ubuntu Latest • .NET SDK 10.0.201
 :::
@@ -9112,11 +9112,11 @@ This benchmark was automatically generated on **2026-03-22** from the latest CI 
 
 | Framework | Version | Mean | Median | StdDev |
 |-----------|---------|------|--------|--------|
-| **TUnit** | 1.20.0 | 537.8 ms | 540.0 ms | 6.59 ms |
-| NUnit | 4.5.1 | 715.7 ms | 713.8 ms | 9.47 ms |
-| MSTest | 4.1.0 | 635.7 ms | 633.3 ms | 11.96 ms |
-| xUnit3 | 3.2.2 | 766.2 ms | 766.1 ms | 6.71 ms |
-| **TUnit (AOT)** | 1.20.0 | 123.8 ms | 123.8 ms | 0.37 ms |
+| **TUnit** | 1.24.0 | 533.8 ms | 533.4 ms | 3.10 ms |
+| NUnit | 4.5.1 | 689.1 ms | 689.1 ms | 6.13 ms |
+| MSTest | 4.1.0 | 618.2 ms | 619.7 ms | 4.48 ms |
+| xUnit3 | 3.2.2 | 745.1 ms | 745.5 ms | 8.28 ms |
+| **TUnit (AOT)** | 1.24.0 | 122.4 ms | 122.5 ms | 0.14 ms |
 
 ## 📈 Visual Comparison
 
@@ -9154,8 +9154,8 @@ This benchmark was automatically generated on **2026-03-22** from the latest CI 
 xychart-beta
   title "AsyncTests Performance Comparison"
   x-axis ["TUnit", "NUnit", "MSTest", "xUnit3", "TUnit_AOT"]
-  y-axis "Time (ms)" 0 --> 920
-  bar [537.8, 715.7, 635.7, 766.2, 123.8]
+  y-axis "Time (ms)" 0 --> 895
+  bar [533.8, 689.1, 618.2, 745.1, 122.4]
 ```
 
 ## 🎯 Key Insights
@@ -9168,7 +9168,7 @@ This benchmark compares TUnit's performance against NUnit, MSTest, xUnit3 using 
 View the [benchmarks overview](/docs/benchmarks) for methodology details and environment information.
 :::
 
-*Last generated: 2026-03-22T00:38:21.988Z*
+*Last generated: 2026-03-31T00:40:33.175Z*
 
 ---
 
@@ -9177,7 +9177,7 @@ View the [benchmarks overview](/docs/benchmarks) for methodology details and env
 # Build Performance Benchmark
 
 :::info Last Updated
-This benchmark was automatically generated on **2026-03-22** from the latest CI run.
+This benchmark was automatically generated on **2026-03-31** from the latest CI run.
 
 **Environment:** Ubuntu Latest • .NET SDK 10.0.201
 :::
@@ -9188,10 +9188,10 @@ Compilation time comparison across frameworks:
 
 | Framework | Version | Mean | Median | StdDev |
 |-----------|---------|------|--------|--------|
-| **TUnit** | 1.20.0 | 2.776 s | 2.782 s | 0.0309 s |
-| Build_NUnit | 4.5.1 | 2.466 s | 2.460 s | 0.0168 s |
-| Build_MSTest | 4.1.0 | 2.563 s | 2.565 s | 0.0136 s |
-| Build_xUnit3 | 3.2.2 | 2.471 s | 2.473 s | 0.0203 s |
+| **TUnit** | 1.24.0 | 2.610 s | 2.613 s | 0.0339 s |
+| Build_NUnit | 4.5.1 | 2.415 s | 2.418 s | 0.0231 s |
+| Build_MSTest | 4.1.0 | 2.493 s | 2.494 s | 0.0130 s |
+| Build_xUnit3 | 3.2.2 | 2.414 s | 2.412 s | 0.0161 s |
 
 ## 📈 Visual Comparison
 
@@ -9230,7 +9230,7 @@ xychart-beta
   title "Build Time Comparison"
   x-axis ["Build_TUnit", "Build_NUnit", "Build_MSTest", "Build_xUnit3"]
   y-axis "Time (s)" 0 --> 4
-  bar [2.776, 2.466, 2.563, 2.471]
+  bar [2.61, 2.415, 2.493, 2.414]
 ```
 
 ---
@@ -9239,7 +9239,7 @@ xychart-beta
 View the [benchmarks overview](/docs/benchmarks) for methodology details and environment information.
 :::
 
-*Last generated: 2026-03-22T00:38:21.991Z*
+*Last generated: 2026-03-31T00:40:33.178Z*
 
 ---
 
@@ -9248,7 +9248,7 @@ View the [benchmarks overview](/docs/benchmarks) for methodology details and env
 # DataDrivenTests Benchmark
 
 :::info Last Updated
-This benchmark was automatically generated on **2026-03-22** from the latest CI run.
+This benchmark was automatically generated on **2026-03-31** from the latest CI run.
 
 **Environment:** Ubuntu Latest • .NET SDK 10.0.201
 :::
@@ -9257,11 +9257,11 @@ This benchmark was automatically generated on **2026-03-22** from the latest CI 
 
 | Framework | Version | Mean | Median | StdDev |
 |-----------|---------|------|--------|--------|
-| **TUnit** | 1.20.0 | 466.65 ms | 466.04 ms | 4.192 ms |
-| NUnit | 4.5.1 | 574.88 ms | 573.63 ms | 6.979 ms |
-| MSTest | 4.1.0 | 551.94 ms | 548.59 ms | 9.002 ms |
-| xUnit3 | 3.2.2 | 613.43 ms | 615.23 ms | 3.728 ms |
-| **TUnit (AOT)** | 1.20.0 | 25.48 ms | 24.98 ms | 1.738 ms |
+| **TUnit** | 1.24.0 | 477.98 ms | 477.73 ms | 4.741 ms |
+| NUnit | 4.5.1 | 563.73 ms | 561.82 ms | 7.065 ms |
+| MSTest | 4.1.0 | 465.68 ms | 466.12 ms | 5.635 ms |
+| xUnit3 | 3.2.2 | 603.86 ms | 602.67 ms | 9.732 ms |
+| **TUnit (AOT)** | 1.24.0 | 22.84 ms | 22.78 ms | 0.354 ms |
 
 ## 📈 Visual Comparison
 
@@ -9299,8 +9299,8 @@ This benchmark was automatically generated on **2026-03-22** from the latest CI 
 xychart-beta
   title "DataDrivenTests Performance Comparison"
   x-axis ["TUnit", "NUnit", "MSTest", "xUnit3", "TUnit_AOT"]
-  y-axis "Time (ms)" 0 --> 737
-  bar [466.65, 574.88, 551.94, 613.43, 25.48]
+  y-axis "Time (ms)" 0 --> 725
+  bar [477.98, 563.73, 465.68, 603.86, 22.84]
 ```
 
 ## 🎯 Key Insights
@@ -9313,7 +9313,7 @@ This benchmark compares TUnit's performance against NUnit, MSTest, xUnit3 using 
 View the [benchmarks overview](/docs/benchmarks) for methodology details and environment information.
 :::
 
-*Last generated: 2026-03-22T00:38:21.989Z*
+*Last generated: 2026-03-31T00:40:33.176Z*
 
 ---
 
@@ -9322,7 +9322,7 @@ View the [benchmarks overview](/docs/benchmarks) for methodology details and env
 # MassiveParallelTests Benchmark
 
 :::info Last Updated
-This benchmark was automatically generated on **2026-03-22** from the latest CI run.
+This benchmark was automatically generated on **2026-03-31** from the latest CI run.
 
 **Environment:** Ubuntu Latest • .NET SDK 10.0.201
 :::
@@ -9331,11 +9331,11 @@ This benchmark was automatically generated on **2026-03-22** from the latest CI 
 
 | Framework | Version | Mean | Median | StdDev |
 |-----------|---------|------|--------|--------|
-| **TUnit** | 1.20.0 | 665.5 ms | 663.2 ms | 6.79 ms |
-| NUnit | 4.5.1 | 1,254.6 ms | 1,253.4 ms | 12.59 ms |
-| MSTest | 4.1.0 | 2,971.3 ms | 2,972.8 ms | 6.90 ms |
-| xUnit3 | 3.2.2 | 3,108.9 ms | 3,110.4 ms | 11.71 ms |
-| **TUnit (AOT)** | 1.20.0 | 228.0 ms | 227.8 ms | 0.74 ms |
+| **TUnit** | 1.24.0 | 632.7 ms | 633.3 ms | 2.70 ms |
+| NUnit | 4.5.1 | 1,215.6 ms | 1,215.6 ms | 6.39 ms |
+| MSTest | 4.1.0 | 2,960.9 ms | 2,961.0 ms | 3.90 ms |
+| xUnit3 | 3.2.2 | 3,088.0 ms | 3,087.4 ms | 7.07 ms |
+| **TUnit (AOT)** | 1.24.0 | 227.2 ms | 227.1 ms | 0.34 ms |
 
 ## 📈 Visual Comparison
 
@@ -9373,8 +9373,8 @@ This benchmark was automatically generated on **2026-03-22** from the latest CI 
 xychart-beta
   title "MassiveParallelTests Performance Comparison"
   x-axis ["TUnit", "NUnit", "MSTest", "xUnit3", "TUnit_AOT"]
-  y-axis "Time (ms)" 0 --> 3731
-  bar [665.5, 1254.6, 2971.3, 3108.9, 228]
+  y-axis "Time (ms)" 0 --> 3706
+  bar [632.7, 1215.6, 2960.9, 3088, 227.2]
 ```
 
 ## 🎯 Key Insights
@@ -9387,7 +9387,7 @@ This benchmark compares TUnit's performance against NUnit, MSTest, xUnit3 using 
 View the [benchmarks overview](/docs/benchmarks) for methodology details and environment information.
 :::
 
-*Last generated: 2026-03-22T00:38:21.989Z*
+*Last generated: 2026-03-31T00:40:33.176Z*
 
 ---
 
@@ -9396,7 +9396,7 @@ View the [benchmarks overview](/docs/benchmarks) for methodology details and env
 # MatrixTests Benchmark
 
 :::info Last Updated
-This benchmark was automatically generated on **2026-03-22** from the latest CI run.
+This benchmark was automatically generated on **2026-03-31** from the latest CI run.
 
 **Environment:** Ubuntu Latest • .NET SDK 10.0.201
 :::
@@ -9405,11 +9405,11 @@ This benchmark was automatically generated on **2026-03-22** from the latest CI 
 
 | Framework | Version | Mean | Median | StdDev |
 |-----------|---------|------|--------|--------|
-| **TUnit** | 1.20.0 | 571.8 ms | 571.8 ms | 1.87 ms |
-| NUnit | 4.5.1 | 1,610.5 ms | 1,609.5 ms | 8.27 ms |
-| MSTest | 4.1.0 | 1,513.9 ms | 1,514.2 ms | 4.43 ms |
-| xUnit3 | 3.2.2 | 1,651.9 ms | 1,653.3 ms | 4.15 ms |
-| **TUnit (AOT)** | 1.20.0 | 125.6 ms | 125.7 ms | 0.33 ms |
+| **TUnit** | 1.24.0 | 582.3 ms | 581.8 ms | 4.45 ms |
+| NUnit | 4.5.1 | 1,600.9 ms | 1,599.9 ms | 8.25 ms |
+| MSTest | 4.1.0 | 1,513.8 ms | 1,515.0 ms | 4.62 ms |
+| xUnit3 | 3.2.2 | 1,647.6 ms | 1,644.4 ms | 8.14 ms |
+| **TUnit (AOT)** | 1.24.0 | 125.5 ms | 125.5 ms | 0.31 ms |
 
 ## 📈 Visual Comparison
 
@@ -9447,8 +9447,8 @@ This benchmark was automatically generated on **2026-03-22** from the latest CI 
 xychart-beta
   title "MatrixTests Performance Comparison"
   x-axis ["TUnit", "NUnit", "MSTest", "xUnit3", "TUnit_AOT"]
-  y-axis "Time (ms)" 0 --> 1983
-  bar [571.8, 1610.5, 1513.9, 1651.9, 125.6]
+  y-axis "Time (ms)" 0 --> 1978
+  bar [582.3, 1600.9, 1513.8, 1647.6, 125.5]
 ```
 
 ## 🎯 Key Insights
@@ -9461,7 +9461,7 @@ This benchmark compares TUnit's performance against NUnit, MSTest, xUnit3 using 
 View the [benchmarks overview](/docs/benchmarks) for methodology details and environment information.
 :::
 
-*Last generated: 2026-03-22T00:38:21.989Z*
+*Last generated: 2026-03-31T00:40:33.176Z*
 
 ---
 
@@ -9470,7 +9470,7 @@ View the [benchmarks overview](/docs/benchmarks) for methodology details and env
 # ScaleTests Benchmark
 
 :::info Last Updated
-This benchmark was automatically generated on **2026-03-22** from the latest CI run.
+This benchmark was automatically generated on **2026-03-31** from the latest CI run.
 
 **Environment:** Ubuntu Latest • .NET SDK 10.0.201
 :::
@@ -9479,11 +9479,11 @@ This benchmark was automatically generated on **2026-03-22** from the latest CI 
 
 | Framework | Version | Mean | Median | StdDev |
 |-----------|---------|------|--------|--------|
-| **TUnit** | 1.20.0 | 475.59 ms | 476.50 ms | 4.038 ms |
-| NUnit | 4.5.1 | 626.19 ms | 624.26 ms | 9.339 ms |
-| MSTest | 4.1.0 | 579.84 ms | 576.92 ms | 7.759 ms |
-| xUnit3 | 3.2.2 | 631.28 ms | 629.85 ms | 6.328 ms |
-| **TUnit (AOT)** | 1.20.0 | 33.52 ms | 33.57 ms | 2.447 ms |
+| **TUnit** | 1.24.0 | 520.01 ms | 520.07 ms | 3.314 ms |
+| NUnit | 4.5.1 | 632.09 ms | 632.03 ms | 5.551 ms |
+| MSTest | 4.1.0 | 501.73 ms | 501.77 ms | 5.338 ms |
+| xUnit3 | 3.2.2 | 639.95 ms | 639.25 ms | 6.911 ms |
+| **TUnit (AOT)** | 1.24.0 | 33.38 ms | 33.40 ms | 1.516 ms |
 
 ## 📈 Visual Comparison
 
@@ -9521,8 +9521,8 @@ This benchmark was automatically generated on **2026-03-22** from the latest CI 
 xychart-beta
   title "ScaleTests Performance Comparison"
   x-axis ["TUnit", "NUnit", "MSTest", "xUnit3", "TUnit_AOT"]
-  y-axis "Time (ms)" 0 --> 758
-  bar [475.59, 626.19, 579.84, 631.28, 33.52]
+  y-axis "Time (ms)" 0 --> 768
+  bar [520.01, 632.09, 501.73, 639.95, 33.38]
 ```
 
 ## 🎯 Key Insights
@@ -9535,7 +9535,7 @@ This benchmark compares TUnit's performance against NUnit, MSTest, xUnit3 using 
 View the [benchmarks overview](/docs/benchmarks) for methodology details and environment information.
 :::
 
-*Last generated: 2026-03-22T00:38:21.990Z*
+*Last generated: 2026-03-31T00:40:33.177Z*
 
 ---
 
@@ -9544,7 +9544,7 @@ View the [benchmarks overview](/docs/benchmarks) for methodology details and env
 # SetupTeardownTests Benchmark
 
 :::info Last Updated
-This benchmark was automatically generated on **2026-03-22** from the latest CI run.
+This benchmark was automatically generated on **2026-03-31** from the latest CI run.
 
 **Environment:** Ubuntu Latest • .NET SDK 10.0.201
 :::
@@ -9553,11 +9553,11 @@ This benchmark was automatically generated on **2026-03-22** from the latest CI 
 
 | Framework | Version | Mean | Median | StdDev |
 |-----------|---------|------|--------|--------|
-| **TUnit** | 1.20.0 | 559.3 ms | 558.0 ms | 5.11 ms |
-| NUnit | 4.5.1 | 1,214.6 ms | 1,212.9 ms | 10.36 ms |
-| MSTest | 4.1.0 | 1,141.6 ms | 1,140.7 ms | 6.66 ms |
-| xUnit3 | 3.2.2 | 1,266.3 ms | 1,266.1 ms | 8.17 ms |
-| **TUnit (AOT)** | 1.20.0 | NA | NA | NA |
+| **TUnit** | 1.24.0 | 544.6 ms | 544.6 ms | 5.33 ms |
+| NUnit | 4.5.1 | 1,161.9 ms | 1,161.8 ms | 7.20 ms |
+| MSTest | 4.1.0 | 1,099.4 ms | 1,099.7 ms | 14.34 ms |
+| xUnit3 | 3.2.2 | 1,226.7 ms | 1,227.5 ms | 9.74 ms |
+| **TUnit (AOT)** | 1.24.0 | NA | NA | NA |
 
 ## 📈 Visual Comparison
 
@@ -9595,8 +9595,8 @@ This benchmark was automatically generated on **2026-03-22** from the latest CI 
 xychart-beta
   title "SetupTeardownTests Performance Comparison"
   x-axis ["TUnit", "NUnit", "MSTest", "xUnit3", "TUnit_AOT"]
-  y-axis "Time (ms)" 0 --> 1520
-  bar [559.3, 1214.6, 1141.6, 1266.3, 0]
+  y-axis "Time (ms)" 0 --> 1473
+  bar [544.6, 1161.9, 1099.4, 1226.7, 0]
 ```
 
 ## 🎯 Key Insights
@@ -9609,7 +9609,7 @@ This benchmark compares TUnit's performance against NUnit, MSTest, xUnit3 using 
 View the [benchmarks overview](/docs/benchmarks) for methodology details and environment information.
 :::
 
-*Last generated: 2026-03-22T00:38:21.990Z*
+*Last generated: 2026-03-31T00:40:33.177Z*
 
 ---
 
@@ -9617,7 +9617,7 @@ View the [benchmarks overview](/docs/benchmarks) for methodology details and env
 
 
 :::info Last Updated
-These benchmarks were automatically generated on **2026-03-22** from the latest CI run.
+These benchmarks were automatically generated on **2026-03-31** from the latest CI run.
 
 **Environment:** Ubuntu Latest • .NET SDK 10.0.201
 :::
@@ -9645,7 +9645,7 @@ These benchmarks compare TUnit against the most popular .NET testing frameworks:
 
 | Framework | Version Tested |
 |-----------|----------------|
-| **TUnit** | 1.20.0 |
+| **TUnit** | 1.24.0 |
 | **xUnit v3** | 3.2.2 |
 | **NUnit** | 4.5.1 |
 | **MSTest** | 4.1.0 |
@@ -9667,7 +9667,7 @@ The benchmarks measure real-world testing patterns:
 - **Runtime**: .NET 10.0.5 (10.0.5, 10.0.526.15411), X64 RyuJIT x86-64-v4
 - **SDK**: .NET SDK 10.0.201
 - **Hardware**: GitHub Actions Standard Runner (Ubuntu)
-- **Tool**: BenchmarkDotNet v0.15.8, Linux Ubuntu 24.04.3 LTS (Noble Numbat)
+- **Tool**: BenchmarkDotNet v0.15.8, Linux Ubuntu 24.04.4 LTS (Noble Numbat)
 
 ### Why These Numbers Matter
 
@@ -9688,7 +9688,7 @@ These benchmarks run automatically daily via [GitHub Actions](https://github.com
 Each benchmark runs multiple iterations with statistical analysis to ensure accuracy. Results may vary based on hardware and test characteristics.
 :::
 
-*Last generated: 2026-03-22T00:38:21.991Z*
+*Last generated: 2026-03-31T00:40:33.178Z*
 
 ---
 
@@ -9975,6 +9975,760 @@ Found an issue with the benchmarks? [Open an issue](https://github.com/thomhurst
 - [BenchmarkDotNet Documentation](https://benchmarkdotnet.org/articles/overview.html)
 - [.NET Performance Best Practices](https://learn.microsoft.com/en-us/dotnet/framework/performance/)
 - [TUnit Performance Best Practices](/docs/guides/performance)
+
+---
+
+## Mock Benchmark: Callback
+
+# Callback Benchmark
+
+:::info Last Updated
+This benchmark was automatically generated on **2026-03-31** from the latest CI run.
+
+**Environment:** Ubuntu Latest • .NET SDK 10.0.201
+:::
+
+## 📊 Results
+
+Callback registration and execution:
+
+| Library | Mean | Error | StdDev | Allocated |
+|---------|------|-------|--------|-----------|
+| **TUnit.Mocks** | 694.7 ns | 13.74 ns | 20.98 ns | 3.16 KB |
+| Imposter | 518.4 ns | 5.34 ns | 5.00 ns | 2.66 KB |
+| Mockolate | 570.1 ns | 6.83 ns | 6.05 ns | 1.78 KB |
+| Moq | 184,956.2 ns | 1,168.78 ns | 1,093.28 ns | 13.14 KB |
+| NSubstitute | 4,652.2 ns | 38.92 ns | 36.41 ns | 7.93 KB |
+| FakeItEasy | 5,477.0 ns | 73.22 ns | 68.49 ns | 7.44 KB |
+
+```mermaid
+%%{init: {
+  'theme':'base',
+  'themeVariables': {
+    'primaryColor': '#2563eb',
+    'primaryTextColor': '#1f2937',
+    'primaryBorderColor': '#1e40af',
+    'lineColor': '#6b7280',
+    'secondaryColor': '#7c3aed',
+    'tertiaryColor': '#dc2626',
+    'background': '#ffffff',
+    'pie1': '#2563eb',
+    'pie2': '#7c3aed',
+    'pie3': '#dc2626',
+    'pie4': '#f59e0b',
+    'pie5': '#10b981',
+    'pie6': '#06b6d4',
+    'pie7': '#ec4899',
+    'pie8': '#6366f1'
+  }
+}}%%
+xychart-beta
+  title "Callback Performance Comparison"
+  x-axis ["TUnit.Mocks", "Imposter", "Mockolate", "Moq", "NSubstitute", "FakeItEasy"]
+  y-axis "Time (ns)" 0 --> 221948
+  bar [694.7, 518.4, 570.1, 184956.2, 4652.2, 5477]
+```
+
+---
+
+### with args
+
+| Library | Mean | Error | StdDev | Allocated |
+|---------|------|-------|--------|-----------|
+| **TUnit.Mocks** | 854.9 ns | 16.89 ns | 19.45 ns | 3.33 KB |
+| Imposter | 553.0 ns | 10.93 ns | 22.82 ns | 2.82 KB |
+| Mockolate | 666.6 ns | 11.54 ns | 10.80 ns | 2.11 KB |
+| Moq | 190,837.9 ns | 1,346.17 ns | 1,259.21 ns | 13.84 KB |
+| NSubstitute | 5,149.2 ns | 73.70 ns | 65.34 ns | 8.53 KB |
+| FakeItEasy | 6,425.4 ns | 108.92 ns | 101.88 ns | 9.26 KB |
+
+```mermaid
+%%{init: {
+  'theme':'base',
+  'themeVariables': {
+    'primaryColor': '#2563eb',
+    'primaryTextColor': '#1f2937',
+    'primaryBorderColor': '#1e40af',
+    'lineColor': '#6b7280',
+    'secondaryColor': '#7c3aed',
+    'tertiaryColor': '#dc2626',
+    'background': '#ffffff',
+    'pie1': '#2563eb',
+    'pie2': '#7c3aed',
+    'pie3': '#dc2626',
+    'pie4': '#f59e0b',
+    'pie5': '#10b981',
+    'pie6': '#06b6d4',
+    'pie7': '#ec4899',
+    'pie8': '#6366f1'
+  }
+}}%%
+xychart-beta
+  title "Callback (with args) Performance Comparison"
+  x-axis ["TUnit.Mocks", "Imposter", "Mockolate", "Moq", "NSubstitute", "FakeItEasy"]
+  y-axis "Time (ns)" 0 --> 229006
+  bar [854.9, 553, 666.6, 190837.9, 5149.2, 6425.4]
+```
+
+## 🎯 Key Insights
+
+This benchmark compares **TUnit.Mocks** (source-generated) against runtime proxy-based mocking libraries for callback registration and execution.
+
+---
+
+:::note Methodology
+View the [mock benchmarks overview](/docs/benchmarks/mocks) for methodology details and environment information.
+:::
+
+*Last generated: 2026-03-31T03:22:46.140Z*
+
+---
+
+## Mock Benchmark: CombinedWorkflow
+
+# CombinedWorkflow Benchmark
+
+:::info Last Updated
+This benchmark was automatically generated on **2026-03-31** from the latest CI run.
+
+**Environment:** Ubuntu Latest • .NET SDK 10.0.201
+:::
+
+## 📊 Results
+
+Full workflow: create → setup → invoke → verify:
+
+| Library | Mean | Error | StdDev | Allocated |
+|---------|------|-------|--------|-----------|
+| **TUnit.Mocks** | 1.927 μs | 0.0234 μs | 0.0219 μs | 6.26 KB |
+| Imposter | 2.695 μs | 0.0516 μs | 0.0507 μs | 15.71 KB |
+| Mockolate | 2.404 μs | 0.0300 μs | 0.0281 μs | 6.95 KB |
+| Moq | 405.221 μs | 2.3487 μs | 2.1970 μs | 36.35 KB |
+| NSubstitute | 17.325 μs | 0.1934 μs | 0.1809 μs | 26.72 KB |
+| FakeItEasy | 17.442 μs | 0.2778 μs | 0.2463 μs | 25.52 KB |
+
+```mermaid
+%%{init: {
+  'theme':'base',
+  'themeVariables': {
+    'primaryColor': '#2563eb',
+    'primaryTextColor': '#1f2937',
+    'primaryBorderColor': '#1e40af',
+    'lineColor': '#6b7280',
+    'secondaryColor': '#7c3aed',
+    'tertiaryColor': '#dc2626',
+    'background': '#ffffff',
+    'pie1': '#2563eb',
+    'pie2': '#7c3aed',
+    'pie3': '#dc2626',
+    'pie4': '#f59e0b',
+    'pie5': '#10b981',
+    'pie6': '#06b6d4',
+    'pie7': '#ec4899',
+    'pie8': '#6366f1'
+  }
+}}%%
+xychart-beta
+  title "CombinedWorkflow Performance Comparison"
+  x-axis ["TUnit.Mocks", "Imposter", "Mockolate", "Moq", "NSubstitute", "FakeItEasy"]
+  y-axis "Time (μs)" 0 --> 487
+  bar [1.927, 2.695, 2.404, 405.221, 17.325, 17.442]
+```
+
+## 🎯 Key Insights
+
+This benchmark compares **TUnit.Mocks** (source-generated) against runtime proxy-based mocking libraries for full workflow: create → setup → invoke → verify.
+
+---
+
+:::note Methodology
+View the [mock benchmarks overview](/docs/benchmarks/mocks) for methodology details and environment information.
+:::
+
+*Last generated: 2026-03-31T03:22:46.140Z*
+
+---
+
+## Mock Benchmark: Invocation
+
+# Invocation Benchmark
+
+:::info Last Updated
+This benchmark was automatically generated on **2026-03-31** from the latest CI run.
+
+**Environment:** Ubuntu Latest • .NET SDK 10.0.201
+:::
+
+## 📊 Results
+
+Calling methods on mock objects:
+
+| Library | Mean | Error | StdDev | Allocated |
+|---------|------|-------|--------|-----------|
+| **TUnit.Mocks** | 400.3 ns | 29.01 ns | 1.59 ns | 176 B |
+| Imposter | 296.2 ns | 77.32 ns | 4.24 ns | 168 B |
+| Mockolate | 667.8 ns | 179.77 ns | 9.85 ns | 640 B |
+| Moq | 821.8 ns | 317.86 ns | 17.42 ns | 376 B |
+| NSubstitute | 743.4 ns | 314.11 ns | 17.22 ns | 304 B |
+| FakeItEasy | 1,859.5 ns | 692.58 ns | 37.96 ns | 944 B |
+
+```mermaid
+%%{init: {
+  'theme':'base',
+  'themeVariables': {
+    'primaryColor': '#2563eb',
+    'primaryTextColor': '#1f2937',
+    'primaryBorderColor': '#1e40af',
+    'lineColor': '#6b7280',
+    'secondaryColor': '#7c3aed',
+    'tertiaryColor': '#dc2626',
+    'background': '#ffffff',
+    'pie1': '#2563eb',
+    'pie2': '#7c3aed',
+    'pie3': '#dc2626',
+    'pie4': '#f59e0b',
+    'pie5': '#10b981',
+    'pie6': '#06b6d4',
+    'pie7': '#ec4899',
+    'pie8': '#6366f1'
+  }
+}}%%
+xychart-beta
+  title "Invocation Performance Comparison"
+  x-axis ["TUnit.Mocks", "Imposter", "Mockolate", "Moq", "NSubstitute", "FakeItEasy"]
+  y-axis "Time (ns)" 0 --> 2232
+  bar [400.3, 296.2, 667.8, 821.8, 743.4, 1859.5]
+```
+
+---
+
+### String
+
+| Library | Mean | Error | StdDev | Allocated |
+|---------|------|-------|--------|-----------|
+| **TUnit.Mocks** | 218.2 ns | 145.69 ns | 7.99 ns | 112 B |
+| Imposter | 300.2 ns | 42.47 ns | 2.33 ns | 168 B |
+| Mockolate | 581.7 ns | 397.05 ns | 21.76 ns | 520 B |
+| Moq | 544.3 ns | 436.74 ns | 23.94 ns | 296 B |
+| NSubstitute | 617.8 ns | 131.08 ns | 7.19 ns | 272 B |
+| FakeItEasy | 1,568.9 ns | 366.02 ns | 20.06 ns | 776 B |
+
+```mermaid
+%%{init: {
+  'theme':'base',
+  'themeVariables': {
+    'primaryColor': '#2563eb',
+    'primaryTextColor': '#1f2937',
+    'primaryBorderColor': '#1e40af',
+    'lineColor': '#6b7280',
+    'secondaryColor': '#7c3aed',
+    'tertiaryColor': '#dc2626',
+    'background': '#ffffff',
+    'pie1': '#2563eb',
+    'pie2': '#7c3aed',
+    'pie3': '#dc2626',
+    'pie4': '#f59e0b',
+    'pie5': '#10b981',
+    'pie6': '#06b6d4',
+    'pie7': '#ec4899',
+    'pie8': '#6366f1'
+  }
+}}%%
+xychart-beta
+  title "Invocation (String) Performance Comparison"
+  x-axis ["TUnit.Mocks", "Imposter", "Mockolate", "Moq", "NSubstitute", "FakeItEasy"]
+  y-axis "Time (ns)" 0 --> 1883
+  bar [218.2, 300.2, 581.7, 544.3, 617.8, 1568.9]
+```
+
+---
+
+### 100 calls
+
+| Library | Mean | Error | StdDev | Allocated |
+|---------|------|-------|--------|-----------|
+| **TUnit.Mocks** | 39,730.8 ns | 33,472.02 ns | 1,834.71 ns | 18048 B |
+| Imposter | 28,857.9 ns | 5,403.68 ns | 296.19 ns | 16800 B |
+| Mockolate | 68,815.9 ns | 17,088.85 ns | 936.70 ns | 64000 B |
+| Moq | 78,758.3 ns | 10,955.34 ns | 600.50 ns | 37600 B |
+| NSubstitute | 70,921.5 ns | 18,135.11 ns | 994.05 ns | 30848 B |
+| FakeItEasy | 177,200.5 ns | 122,363.56 ns | 6,707.16 ns | 94400 B |
+
+```mermaid
+%%{init: {
+  'theme':'base',
+  'themeVariables': {
+    'primaryColor': '#2563eb',
+    'primaryTextColor': '#1f2937',
+    'primaryBorderColor': '#1e40af',
+    'lineColor': '#6b7280',
+    'secondaryColor': '#7c3aed',
+    'tertiaryColor': '#dc2626',
+    'background': '#ffffff',
+    'pie1': '#2563eb',
+    'pie2': '#7c3aed',
+    'pie3': '#dc2626',
+    'pie4': '#f59e0b',
+    'pie5': '#10b981',
+    'pie6': '#06b6d4',
+    'pie7': '#ec4899',
+    'pie8': '#6366f1'
+  }
+}}%%
+xychart-beta
+  title "Invocation (100 calls) Performance Comparison"
+  x-axis ["TUnit.Mocks", "Imposter", "Mockolate", "Moq", "NSubstitute", "FakeItEasy"]
+  y-axis "Time (ns)" 0 --> 212641
+  bar [39730.8, 28857.9, 68815.9, 78758.3, 70921.5, 177200.5]
+```
+
+## 🎯 Key Insights
+
+This benchmark compares **TUnit.Mocks** (source-generated) against runtime proxy-based mocking libraries for calling methods on mock objects.
+
+---
+
+:::note Methodology
+View the [mock benchmarks overview](/docs/benchmarks/mocks) for methodology details and environment information.
+:::
+
+*Last generated: 2026-03-31T03:22:46.140Z*
+
+---
+
+## Mock Benchmark: MockCreation
+
+# MockCreation Benchmark
+
+:::info Last Updated
+This benchmark was automatically generated on **2026-03-31** from the latest CI run.
+
+**Environment:** Ubuntu Latest • .NET SDK 10.0.201
+:::
+
+## 📊 Results
+
+Mock instance creation performance:
+
+| Library | Mean | Error | StdDev | Allocated |
+|---------|------|-------|--------|-----------|
+| **TUnit.Mocks** | 33.51 ns | 0.293 ns | 0.260 ns | 208 B |
+| Imposter | 87.60 ns | 0.746 ns | 0.661 ns | 440 B |
+| Mockolate | 62.34 ns | 0.362 ns | 0.339 ns | 360 B |
+| Moq | 1,349.41 ns | 17.505 ns | 16.374 ns | 2048 B |
+| NSubstitute | 1,805.40 ns | 5.647 ns | 5.006 ns | 5000 B |
+| FakeItEasy | 1,669.03 ns | 16.983 ns | 15.886 ns | 2715 B |
+
+```mermaid
+%%{init: {
+  'theme':'base',
+  'themeVariables': {
+    'primaryColor': '#2563eb',
+    'primaryTextColor': '#1f2937',
+    'primaryBorderColor': '#1e40af',
+    'lineColor': '#6b7280',
+    'secondaryColor': '#7c3aed',
+    'tertiaryColor': '#dc2626',
+    'background': '#ffffff',
+    'pie1': '#2563eb',
+    'pie2': '#7c3aed',
+    'pie3': '#dc2626',
+    'pie4': '#f59e0b',
+    'pie5': '#10b981',
+    'pie6': '#06b6d4',
+    'pie7': '#ec4899',
+    'pie8': '#6366f1'
+  }
+}}%%
+xychart-beta
+  title "MockCreation Performance Comparison"
+  x-axis ["TUnit.Mocks", "Imposter", "Mockolate", "Moq", "NSubstitute", "FakeItEasy"]
+  y-axis "Time (ns)" 0 --> 2167
+  bar [33.51, 87.6, 62.34, 1349.41, 1805.4, 1669.03]
+```
+
+---
+
+### Repository
+
+| Library | Mean | Error | StdDev | Allocated |
+|---------|------|-------|--------|-----------|
+| **TUnit.Mocks** | 32.54 ns | 0.279 ns | 0.248 ns | 208 B |
+| Imposter | 137.09 ns | 2.133 ns | 1.891 ns | 696 B |
+| Mockolate | 62.80 ns | 1.281 ns | 1.837 ns | 360 B |
+| Moq | 1,354.00 ns | 15.584 ns | 13.815 ns | 1912 B |
+| NSubstitute | 1,837.63 ns | 18.040 ns | 15.992 ns | 5000 B |
+| FakeItEasy | 1,728.22 ns | 9.558 ns | 8.940 ns | 2715 B |
+
+```mermaid
+%%{init: {
+  'theme':'base',
+  'themeVariables': {
+    'primaryColor': '#2563eb',
+    'primaryTextColor': '#1f2937',
+    'primaryBorderColor': '#1e40af',
+    'lineColor': '#6b7280',
+    'secondaryColor': '#7c3aed',
+    'tertiaryColor': '#dc2626',
+    'background': '#ffffff',
+    'pie1': '#2563eb',
+    'pie2': '#7c3aed',
+    'pie3': '#dc2626',
+    'pie4': '#f59e0b',
+    'pie5': '#10b981',
+    'pie6': '#06b6d4',
+    'pie7': '#ec4899',
+    'pie8': '#6366f1'
+  }
+}}%%
+xychart-beta
+  title "MockCreation (Repository) Performance Comparison"
+  x-axis ["TUnit.Mocks", "Imposter", "Mockolate", "Moq", "NSubstitute", "FakeItEasy"]
+  y-axis "Time (ns)" 0 --> 2206
+  bar [32.54, 137.09, 62.8, 1354, 1837.63, 1728.22]
+```
+
+## 🎯 Key Insights
+
+This benchmark compares **TUnit.Mocks** (source-generated) against runtime proxy-based mocking libraries for mock instance creation performance.
+
+---
+
+:::note Methodology
+View the [mock benchmarks overview](/docs/benchmarks/mocks) for methodology details and environment information.
+:::
+
+*Last generated: 2026-03-31T03:22:46.140Z*
+
+---
+
+## Mock Benchmark: Setup
+
+# Setup Benchmark
+
+:::info Last Updated
+This benchmark was automatically generated on **2026-03-31** from the latest CI run.
+
+**Environment:** Ubuntu Latest • .NET SDK 10.0.201
+:::
+
+## 📊 Results
+
+Mock behavior configuration (returns, matchers):
+
+| Library | Mean | Error | StdDev | Allocated |
+|---------|------|-------|--------|-----------|
+| **TUnit.Mocks** | 542.7 ns | 5.43 ns | 5.08 ns | 1.99 KB |
+| Imposter | 808.1 ns | 13.65 ns | 12.10 ns | 6.12 KB |
+| Mockolate | 438.0 ns | 2.52 ns | 2.23 ns | 2.01 KB |
+| Moq | 422,632.5 ns | 1,809.53 ns | 1,692.63 ns | 28.52 KB |
+| NSubstitute | 5,494.1 ns | 57.29 ns | 53.59 ns | 9.01 KB |
+| FakeItEasy | 8,080.6 ns | 47.84 ns | 44.75 ns | 10.45 KB |
+
+```mermaid
+%%{init: {
+  'theme':'base',
+  'themeVariables': {
+    'primaryColor': '#2563eb',
+    'primaryTextColor': '#1f2937',
+    'primaryBorderColor': '#1e40af',
+    'lineColor': '#6b7280',
+    'secondaryColor': '#7c3aed',
+    'tertiaryColor': '#dc2626',
+    'background': '#ffffff',
+    'pie1': '#2563eb',
+    'pie2': '#7c3aed',
+    'pie3': '#dc2626',
+    'pie4': '#f59e0b',
+    'pie5': '#10b981',
+    'pie6': '#06b6d4',
+    'pie7': '#ec4899',
+    'pie8': '#6366f1'
+  }
+}}%%
+xychart-beta
+  title "Setup Performance Comparison"
+  x-axis ["TUnit.Mocks", "Imposter", "Mockolate", "Moq", "NSubstitute", "FakeItEasy"]
+  y-axis "Time (ns)" 0 --> 507159
+  bar [542.7, 808.1, 438, 422632.5, 5494.1, 8080.6]
+```
+
+---
+
+### Multiple
+
+| Library | Mean | Error | StdDev | Allocated |
+|---------|------|-------|--------|-----------|
+| **TUnit.Mocks** | 786.5 ns | 12.16 ns | 10.78 ns | 2.75 KB |
+| Imposter | 1,330.7 ns | 16.48 ns | 13.76 ns | 10.59 KB |
+| Mockolate | 712.5 ns | 11.10 ns | 10.38 ns | 3.05 KB |
+| Moq | 113,644.6 ns | 718.76 ns | 672.33 ns | 16.53 KB |
+| NSubstitute | 11,953.0 ns | 79.84 ns | 70.78 ns | 20.31 KB |
+| FakeItEasy | 7,393.0 ns | 96.47 ns | 85.52 ns | 11.71 KB |
+
+```mermaid
+%%{init: {
+  'theme':'base',
+  'themeVariables': {
+    'primaryColor': '#2563eb',
+    'primaryTextColor': '#1f2937',
+    'primaryBorderColor': '#1e40af',
+    'lineColor': '#6b7280',
+    'secondaryColor': '#7c3aed',
+    'tertiaryColor': '#dc2626',
+    'background': '#ffffff',
+    'pie1': '#2563eb',
+    'pie2': '#7c3aed',
+    'pie3': '#dc2626',
+    'pie4': '#f59e0b',
+    'pie5': '#10b981',
+    'pie6': '#06b6d4',
+    'pie7': '#ec4899',
+    'pie8': '#6366f1'
+  }
+}}%%
+xychart-beta
+  title "Setup (Multiple) Performance Comparison"
+  x-axis ["TUnit.Mocks", "Imposter", "Mockolate", "Moq", "NSubstitute", "FakeItEasy"]
+  y-axis "Time (ns)" 0 --> 136374
+  bar [786.5, 1330.7, 712.5, 113644.6, 11953, 7393]
+```
+
+## 🎯 Key Insights
+
+This benchmark compares **TUnit.Mocks** (source-generated) against runtime proxy-based mocking libraries for mock behavior configuration (returns, matchers).
+
+---
+
+:::note Methodology
+View the [mock benchmarks overview](/docs/benchmarks/mocks) for methodology details and environment information.
+:::
+
+*Last generated: 2026-03-31T03:22:46.140Z*
+
+---
+
+## Mock Benchmark: Verification
+
+# Verification Benchmark
+
+:::info Last Updated
+This benchmark was automatically generated on **2026-03-31** from the latest CI run.
+
+**Environment:** Ubuntu Latest • .NET SDK 10.0.201
+:::
+
+## 📊 Results
+
+Verifying mock method calls:
+
+| Library | Mean | Error | StdDev | Allocated |
+|---------|------|-------|--------|-----------|
+| **TUnit.Mocks** | 747.01 ns | 4.703 ns | 4.400 ns | 3080 B |
+| Imposter | 670.44 ns | 5.770 ns | 5.115 ns | 4688 B |
+| Mockolate | 904.99 ns | 3.528 ns | 3.300 ns | 3104 B |
+| Moq | 337,659.45 ns | 2,363.046 ns | 2,094.779 ns | 24325 B |
+| NSubstitute | 6,271.24 ns | 33.911 ns | 28.318 ns | 10064 B |
+| FakeItEasy | 7,057.80 ns | 28.124 ns | 26.308 ns | 10722 B |
+
+```mermaid
+%%{init: {
+  'theme':'base',
+  'themeVariables': {
+    'primaryColor': '#2563eb',
+    'primaryTextColor': '#1f2937',
+    'primaryBorderColor': '#1e40af',
+    'lineColor': '#6b7280',
+    'secondaryColor': '#7c3aed',
+    'tertiaryColor': '#dc2626',
+    'background': '#ffffff',
+    'pie1': '#2563eb',
+    'pie2': '#7c3aed',
+    'pie3': '#dc2626',
+    'pie4': '#f59e0b',
+    'pie5': '#10b981',
+    'pie6': '#06b6d4',
+    'pie7': '#ec4899',
+    'pie8': '#6366f1'
+  }
+}}%%
+xychart-beta
+  title "Verification Performance Comparison"
+  x-axis ["TUnit.Mocks", "Imposter", "Mockolate", "Moq", "NSubstitute", "FakeItEasy"]
+  y-axis "Time (ns)" 0 --> 405192
+  bar [747.01, 670.44, 904.99, 337659.45, 6271.24, 7057.8]
+```
+
+---
+
+### Never
+
+| Library | Mean | Error | StdDev | Allocated |
+|---------|------|-------|--------|-----------|
+| **TUnit.Mocks** | 77.40 ns | 0.343 ns | 0.321 ns | 384 B |
+| Imposter | 314.22 ns | 3.486 ns | 3.261 ns | 2400 B |
+| Mockolate | 205.99 ns | 0.353 ns | 0.330 ns | 904 B |
+| Moq | 86,766.43 ns | 631.587 ns | 590.787 ns | 6918 B |
+| NSubstitute | 3,506.37 ns | 20.693 ns | 19.357 ns | 7088 B |
+| FakeItEasy | 3,644.70 ns | 24.479 ns | 22.898 ns | 5210 B |
+
+```mermaid
+%%{init: {
+  'theme':'base',
+  'themeVariables': {
+    'primaryColor': '#2563eb',
+    'primaryTextColor': '#1f2937',
+    'primaryBorderColor': '#1e40af',
+    'lineColor': '#6b7280',
+    'secondaryColor': '#7c3aed',
+    'tertiaryColor': '#dc2626',
+    'background': '#ffffff',
+    'pie1': '#2563eb',
+    'pie2': '#7c3aed',
+    'pie3': '#dc2626',
+    'pie4': '#f59e0b',
+    'pie5': '#10b981',
+    'pie6': '#06b6d4',
+    'pie7': '#ec4899',
+    'pie8': '#6366f1'
+  }
+}}%%
+xychart-beta
+  title "Verification (Never) Performance Comparison"
+  x-axis ["TUnit.Mocks", "Imposter", "Mockolate", "Moq", "NSubstitute", "FakeItEasy"]
+  y-axis "Time (ns)" 0 --> 104120
+  bar [77.4, 314.22, 205.99, 86766.43, 3506.37, 3644.7]
+```
+
+---
+
+### Multiple
+
+| Library | Mean | Error | StdDev | Allocated |
+|---------|------|-------|--------|-----------|
+| **TUnit.Mocks** | 1,309.49 ns | 4.164 ns | 3.692 ns | 4544 B |
+| Imposter | 1,709.63 ns | 11.859 ns | 10.513 ns | 11192 B |
+| Mockolate | 1,805.02 ns | 11.725 ns | 10.967 ns | 5400 B |
+| Moq | 459,332.59 ns | 890.134 ns | 743.302 ns | 34699 B |
+| NSubstitute | 11,011.90 ns | 54.151 ns | 50.653 ns | 16762 B |
+| FakeItEasy | 12,832.90 ns | 123.675 ns | 103.274 ns | 19233 B |
+
+```mermaid
+%%{init: {
+  'theme':'base',
+  'themeVariables': {
+    'primaryColor': '#2563eb',
+    'primaryTextColor': '#1f2937',
+    'primaryBorderColor': '#1e40af',
+    'lineColor': '#6b7280',
+    'secondaryColor': '#7c3aed',
+    'tertiaryColor': '#dc2626',
+    'background': '#ffffff',
+    'pie1': '#2563eb',
+    'pie2': '#7c3aed',
+    'pie3': '#dc2626',
+    'pie4': '#f59e0b',
+    'pie5': '#10b981',
+    'pie6': '#06b6d4',
+    'pie7': '#ec4899',
+    'pie8': '#6366f1'
+  }
+}}%%
+xychart-beta
+  title "Verification (Multiple) Performance Comparison"
+  x-axis ["TUnit.Mocks", "Imposter", "Mockolate", "Moq", "NSubstitute", "FakeItEasy"]
+  y-axis "Time (ns)" 0 --> 551200
+  bar [1309.49, 1709.63, 1805.02, 459332.59, 11011.9, 12832.9]
+```
+
+## 🎯 Key Insights
+
+This benchmark compares **TUnit.Mocks** (source-generated) against runtime proxy-based mocking libraries for verifying mock method calls.
+
+---
+
+:::note Methodology
+View the [mock benchmarks overview](/docs/benchmarks/mocks) for methodology details and environment information.
+:::
+
+*Last generated: 2026-03-31T03:22:46.140Z*
+
+---
+
+## Mock Library Benchmarks
+
+
+:::info Last Updated
+These benchmarks were automatically generated on **2026-03-31** from the latest CI run.
+
+**Environment:** Ubuntu Latest • .NET SDK 10.0.201
+:::
+
+## 🚀 Overview
+
+These benchmarks compare source-generated, AOT-compatible mocking libraries against the most popular .NET mocking libraries that use runtime proxy generation:
+
+| Library | Approach | AOT Compatible |
+|---------|----------|----------------|
+| **TUnit.Mocks** | Source-generated at compile time | ✅ Yes |
+| **Imposter** | Source-generated at compile time | ✅ Yes |
+| **Mockolate** | Source-generated at compile time | ✅ Yes |
+| **Moq** | Runtime proxy via Castle.DynamicProxy | ❌ No |
+| **NSubstitute** | Runtime proxy via Castle.DynamicProxy | ❌ No |
+| **FakeItEasy** | Runtime proxy via Castle.DynamicProxy | ❌ No |
+
+## 📊 Benchmark Categories
+
+Click on any benchmark to view detailed results:
+
+- [Callback](Callback) - Callback registration and execution
+- [CombinedWorkflow](CombinedWorkflow) - Full workflow: create → setup → invoke → verify
+- [Invocation](Invocation) - Calling methods on mock objects
+- [MockCreation](MockCreation) - Mock instance creation performance
+- [Setup](Setup) - Mock behavior configuration (returns, matchers)
+- [Verification](Verification) - Verifying mock method calls
+
+## 📈 What's Measured
+
+Each benchmark category tests a specific aspect of mocking library usage:
+
+- **MockCreation** — Mock instance creation performance
+- **Setup** — Mock behavior configuration (returns, matchers)
+- **Invocation** — Calling methods on mock objects
+- **Verification** — Verifying mock method calls
+- **Callback** — Callback registration and execution
+- **CombinedWorkflow** — Full workflow: create → setup → invoke → verify
+
+## 🔧 Methodology
+
+- **Tool**: BenchmarkDotNet v0.15.8, Linux Ubuntu 24.04.4 LTS (Noble Numbat)
+- **OS**: Ubuntu Latest (GitHub Actions)
+- **Runtime**: .NET 10.0.5 (10.0.5, 10.0.526.15411), X64 RyuJIT x86-64-v3
+- **Statistical Rigor**: Multiple iterations with warm-up and outlier detection
+- **Memory**: Allocation tracking enabled via `[MemoryDiagnoser]`
+
+### Why Source-Generated Mocks?
+
+TUnit.Mocks generates mock implementations at compile time, eliminating:
+- Runtime proxy generation overhead
+- Dynamic assembly emission
+- Reflection-based method dispatch
+
+This makes TUnit.Mocks compatible with **Native AOT** and **IL trimming**, while also providing performance benefits for standard .NET execution.
+
+### Source Code
+
+All benchmark source code is available in the [`TUnit.Mocks.Benchmarks`](https://github.com/thomhurst/TUnit/tree/main/TUnit.Mocks.Benchmarks) directory.
+
+---
+
+:::note Continuous Benchmarking
+These benchmarks run automatically daily via [GitHub Actions](https://github.com/thomhurst/TUnit/actions/workflows/mock-benchmarks.yml).
+
+Each benchmark runs multiple iterations with statistical analysis to ensure accuracy. Results may vary based on hardware and test characteristics.
+:::
+
+*Last generated: 2026-03-31T03:22:46.140Z*
 
 ---
 
@@ -12624,6 +13378,8 @@ Activity tracing requires .NET 8 or later. It is not available on .NET Framework
 
 ## Setup
 
+### Option A: OpenTelemetry SDK (recommended)
+
 Add the OpenTelemetry packages to your test project:
 
 ```bash
@@ -12631,7 +13387,7 @@ dotnet add package OpenTelemetry
 dotnet add package OpenTelemetry.Exporter.Console
 ```
 
-Then subscribe to the `"TUnit"` ActivitySource in your test setup:
+Then subscribe to the `"TUnit"` ActivitySource in a `[Before(TestDiscovery)]` hook:
 
 ```csharp
 using System.Diagnostics;
@@ -12643,7 +13399,7 @@ public class TraceSetup
 {
     private static TracerProvider? _tracerProvider;
 
-    [Before(TestSession)]
+    [Before(TestDiscovery)]
     public static void SetupTracing()
     {
         _tracerProvider = Sdk.CreateTracerProviderBuilder()
@@ -12663,16 +13419,63 @@ public class TraceSetup
 
 Replace `AddConsoleExporter()` with your preferred exporter (Jaeger, Zipkin, OTLP, etc.).
 
+### Option B: Raw `ActivityListener` (no SDK dependency)
+
+If you don't want the OpenTelemetry SDK, you can subscribe directly with a `System.Diagnostics.ActivityListener`:
+
+```csharp
+using System.Diagnostics;
+
+public class TraceSetup
+{
+    private static ActivityListener? _listener;
+
+    [Before(TestDiscovery)]
+    public static void SetupTracing()
+    {
+        _listener = new ActivityListener
+        {
+            ShouldListenTo = source => source.Name == "TUnit",
+            Sample = (ref ActivityCreationOptions<ActivityContext> _) => ActivitySamplingResult.AllDataAndRecorded,
+            ActivityStarted = activity => Console.WriteLine($"▶ {activity.OperationName}"),
+            ActivityStopped = activity => Console.WriteLine($"■ {activity.OperationName} ({activity.Duration.TotalMilliseconds:F1}ms)")
+        };
+        ActivitySource.AddActivityListener(_listener);
+    }
+
+    [After(TestSession)]
+    public static void TeardownTracing()
+    {
+        _listener?.Dispose();
+    }
+}
+```
+
+### Why `[Before(TestDiscovery)]`?
+
+The listener **must** be registered in a `[Before(TestDiscovery)]` hook (or earlier, e.g. `[Before(TestSession)]`) so it is active before the discovery span begins. TUnit's hook execution order is:
+
+1. `[Before(TestSession)]` — session-level setup
+2. `[Before(TestDiscovery)]` — register your listener here
+3. **Test discovery** — the `"test discovery"` span is emitted here
+4. Test execution — assembly, suite, and test case spans are emitted
+5. `[After(TestSession)]` — dispose your listener here
+
+If you register the listener later (e.g., in `[Before(Assembly)]`), the discovery span will not be captured.
+
 ## Span Hierarchy
 
 TUnit creates a nested span tree that mirrors the test lifecycle:
 
 ```
 test session
+  ├── test discovery
   └── test assembly
         └── test suite (one per test class)
               └── test case (one per test method invocation)
 ```
+
+The **test discovery** span captures the time spent finding, building, and resolving dependencies for all tests. It appears as a sibling of the assembly spans, giving you a clear view of discovery vs execution time.
 
 ## Attributes
 
@@ -12702,7 +13505,7 @@ Each span carries tags that follow [OpenTelemetry semantic conventions](https://
 | `tunit.test.method` | test case | Method name |
 | `tunit.test.id` | test case | Unique test instance ID |
 | `tunit.test.categories` | test case | Test categories (string array) |
-| `tunit.test.count` | session/assembly/suite | Total test count |
+| `tunit.test.count` | session/assembly/suite/discovery | Total test count |
 | `tunit.test.retry_attempt` | test case | Current retry attempt (when retrying) |
 | `tunit.test.skip_reason` | test case | Reason the test was skipped |
 
@@ -12720,17 +13523,25 @@ When a test is configured with `[Retry]`, each failed attempt produces its own s
 
 ## Using with Jaeger, Zipkin, or OTLP
 
-Swap the exporter in the setup:
+Swap the exporter in the setup code above. Each exporter needs its own NuGet package.
+
+### OTLP (works with Jaeger, Tempo, Honeycomb, etc.)
+
+```bash
+dotnet add package OpenTelemetry.Exporter.OpenTelemetryProtocol
+```
 
 ```csharp
-// OTLP (works with Jaeger, Tempo, Honeycomb, etc.)
-dotnet add package OpenTelemetry.Exporter.OpenTelemetryProtocol
-
 .AddOtlpExporter(opts => opts.Endpoint = new Uri("http://localhost:4317"))
+```
 
-// Zipkin
+### Zipkin
+
+```bash
 dotnet add package OpenTelemetry.Exporter.Zipkin
+```
 
+```csharp
 .AddZipkinExporter(opts => opts.Endpoint = new Uri("http://localhost:9411/api/v2/spans"))
 ```
 
@@ -15351,6 +16162,88 @@ public class LoggingHookExecutor : IHookExecutor
     }
 }
 ```
+
+### Registering a Hook Executor
+
+There are two ways to register a hook executor:
+
+#### 1. Using the `[HookExecutor<T>]` attribute
+
+Apply the `[HookExecutor<T>]` attribute directly to your hook methods:
+
+```csharp
+// On a specific hook method
+[Before(Test)]
+[HookExecutor<LoggingHookExecutor>]
+public async Task SetUp(TestContext context)
+{
+    // This hook runs through the custom executor
+}
+
+[After(Class)]
+[HookExecutor<LoggingHookExecutor>]
+public static async Task ClassCleanup(ClassHookContext context)
+{
+    // This hook also runs through the custom executor
+}
+```
+
+You can also apply it at the class or assembly level to affect all hooks in that scope:
+
+```csharp
+// Assembly-level (applies to all hooks in the assembly)
+[assembly: HookExecutor<LoggingHookExecutor>]
+
+// Class-level (applies to all hooks in the class)
+[HookExecutor<LoggingHookExecutor>]
+public class MyTestClass
+{
+    [Before(Test)]
+    public async Task SetUp(TestContext context) { }
+
+    [After(Test)]
+    public async Task TearDown(TestContext context) { }
+}
+```
+
+#### 2. Using `SetHookExecutor` programmatically
+
+You can set a hook executor at runtime via `ITestRegisteredEventReceiver`. This is useful when you want the same executor for both tests and hooks:
+
+```csharp
+[AttributeUsage(AttributeTargets.Class | AttributeTargets.Method)]
+public class DispatchAttribute : Attribute, ITestRegisteredEventReceiver
+{
+    public int Order => 0;
+
+    public ValueTask OnTestRegistered(TestRegisteredContext context)
+    {
+        var executor = new MyCustomExecutor();
+        context.SetTestExecutor(executor);
+        context.SetHookExecutor(executor);
+        return default;
+    }
+}
+
+// Usage
+[Dispatch]
+public class MyTestClass
+{
+    [Before(Test)]
+    public async Task SetUp(TestContext context)
+    {
+        // Runs through MyCustomExecutor
+    }
+
+    [Test]
+    public async Task MyTest()
+    {
+        // Also runs through MyCustomExecutor
+    }
+}
+```
+
+**Note:** `SetHookExecutor` applies to test-level hooks (`[Before(Test)]` / `[After(Test)]`). For session, assembly, or class-level hooks, use the `[HookExecutor<T>]` attribute directly on the hook method.
 
 ## Event Receivers
 
@@ -18809,7 +19702,7 @@ dotnet run -- --list-tests
 
 `[Ignore]` becomes `[Skip]`
 
-`[Explicit]` becomes `[Explicit]`
+`[Explicit]` remains `[Explicit]`
 
 ### Setup and Teardown
 
@@ -25230,15 +26123,15 @@ public interface IConnection
 }
 
 var mock = Mock.Of<IConnection>();
-Mock.SetState(mock, "disconnected");
+mock.SetState("disconnected");
 
-Mock.InState(mock, "disconnected", m =>
+mock.InState("disconnected", m =>
 {
     m.GetStatus().Returns("OFFLINE");
     m.Connect().TransitionsTo("connected");
 });
 
-Mock.InState(mock, "connected", m =>
+mock.InState("connected", m =>
 {
     m.GetStatus().Returns("ONLINE");
     m.Disconnect().TransitionsTo("disconnected");
@@ -25258,9 +26151,9 @@ status = mock.Object.GetStatus();     // "OFFLINE"
 
 | Method | Description |
 |---|---|
-| `Mock.SetState(mock, "name")` | Set the current state |
-| `Mock.SetState(mock, null)` | Clear state (all setups match) |
-| `Mock.InState(mock, "name", configure)` | Register setups scoped to a state |
+| `mock.SetState("name")` | Set the current state |
+| `mock.SetState(null)` | Clear state (all setups match) |
+| `mock.InState("name", configure)` | Register setups scoped to a state |
 | `.TransitionsTo("name")` | Transition state after method call (on setup chain) |
 
 ## Recursive / Auto-Mocking
@@ -25325,7 +26218,7 @@ repo.Reset();                // clear all mocks
 |---|---|
 | `repo.Of<T>()` | Create and track a loose mock |
 | `repo.Of<T>(behavior)` | Create and track a mock with specific behavior |
-| `repo.OfPartial<T>(args)` | Create and track a partial mock |
+| `repo.Of<T>(args)` | Create and track a mock with constructor args |
 | `repo.Track(existingMock)` | Add an existing mock to the repository |
 | `repo.Mocks` | All tracked mocks |
 | `repo.VerifyAll()` | Verify all setups on all mocks |
@@ -25343,7 +26236,7 @@ mock.Delete(Any());
 svc.GetUser(1);
 // Delete was never called
 
-var diag = Mock.GetDiagnostics(mock);
+var diag = mock.GetDiagnostics();
 diag.TotalSetups;       // 2
 diag.ExercisedSetups;   // 1
 diag.UnusedSetups;      // [Delete(Any())]
@@ -25371,7 +26264,7 @@ public class TestDefaults : IDefaultValueProvider
 }
 
 var mock = Mock.Of<IService>();
-Mock.SetDefaultValueProvider(mock, new TestDefaults());
+mock.DefaultValueProvider = new TestDefaults();
 
 var name = mock.Object.GetName();  // "test-default" (no setup needed)
 var count = mock.Object.GetCount(); // -1
@@ -25387,10 +26280,10 @@ Clear all setups, call history, state, and auto-tracked property values:
 mock.GetUser(Any()).Returns(new User("Alice"));
 svc.GetUser(1);
 
-Mock.Reset(mock);
+mock.Reset();
 
 svc.GetUser(1); // returns default (setup cleared)
-Mock.GetInvocations(mock).Count; // 0 (history cleared)
+mock.Invocations.Count; // 0 (history cleared)
 ```
 
 The `SetupAllProperties()` flag is preserved across resets.
@@ -26021,11 +26914,11 @@ public class GreeterTests
 
 | Factory Method | Use Case |
 |---|---|
-| `Mock.Of<T>()` | Mock an interface or abstract class |
-| `Mock.OfPartial<T>(args)` | Mock a concrete class (calls base for unconfigured methods) |
+| `Mock.Of<T>()` | Mock an interface, abstract class, or concrete class |
 | `Mock.OfDelegate<T>()` | Mock a delegate (`Func<>`, `Action<>`, etc.) |
 | `Mock.Wrap<T>(instance)` | Wrap a real object with selective overrides |
 | `Mock.Of<T1, T2>()` | Mock multiple interfaces on a single object |
+| `[GenerateMock(typeof(T))]` | Generate a mock for interfaces with static abstract members ([details](setup#interfaces-with-static-abstract-members)) |
 | `Mock.HttpHandler()` | Create a `MockHttpHandler` *(requires `TUnit.Mocks.Http`)* |
 | `Mock.HttpClient(baseAddress?)` | Create a `MockHttpClient` — an `HttpClient` with a `.Handler` property *(requires `TUnit.Mocks.Http`)* |
 | `Mock.Logger()` | Create a `MockLogger` *(requires `TUnit.Mocks.Logging`)* |
@@ -26390,7 +27283,7 @@ Call `SetupAllProperties()` to make properties behave like real auto-properties 
 
 ```csharp
 var mock = Mock.Of<IEntity>();
-Mock.SetupAllProperties(mock);
+mock.SetupAllProperties();
 
 mock.Object.Name = "Alice";
 var name = mock.Object.Name; // "Alice"
@@ -26441,7 +27334,7 @@ public abstract class Calculator
     public abstract int Multiply(int a, int b);
 }
 
-var mock = Mock.OfPartial<Calculator>();
+var mock = Mock.Of<Calculator>();
 mock.Multiply(Any(), Any()).Returns(99);
 
 mock.Object.Add(2, 3);      // 5 (base implementation)
@@ -26451,8 +27344,31 @@ mock.Object.Multiply(2, 3); // 99 (mocked)
 Pass constructor arguments for non-default constructors:
 
 ```csharp
-var mock = Mock.OfPartial<MyService>("connectionString", 42);
+var mock = Mock.Of<MyService>("connectionString", 42);
 ```
+
+## Interfaces with Static Abstract Members
+
+Interfaces that have static abstract members (directly or inherited) cannot be used as type arguments in `Mock.Of<T>()` — the compiler raises **CS8920** before the source generator runs.
+
+Use `[assembly: GenerateMock(typeof(T))]` to work around this. The source generator produces a bridge interface (suffixed `_Mockable`) that provides default implementations for the static abstract members:
+
+```csharp
+using TUnit.Mocks;
+
+[assembly: GenerateMock(typeof(IMyParseable))]
+
+public interface IMyParseable : IParsable<IMyParseable>
+{
+    string Format();
+}
+
+// In your test — use the generated bridge type:
+var mock = Mock.Of<TUnit_Mocks_Tests_IMyParseable_Mockable>();
+mock.Format().Returns("formatted");
+```
+
+The bridge type implements all the non-static members of the original interface, so you can set up and verify calls as normal.
 
 ## Delegate Mocking
 
@@ -26618,7 +27534,7 @@ mock.Delete(Any());
 svc.GetUser(1);
 svc.Delete(2);
 
-Mock.VerifyAll(mock); // passes — both setups were invoked
+mock.VerifyAll(); // passes — both setups were invoked
 ```
 
 If any setup was never called, `VerifyAll` throws listing the uninvoked setups.
@@ -26634,7 +27550,7 @@ svc.Delete(2);
 mock.GetUser(1).WasCalled(Times.Once);
 mock.Delete(2).WasCalled(Times.Once);
 
-Mock.VerifyNoOtherCalls(mock); // passes — all calls accounted for
+mock.VerifyNoOtherCalls(); // passes — all calls accounted for
 ```
 
 If there are unverified calls, `VerifyNoOtherCalls` throws listing them.
@@ -26660,7 +27576,7 @@ This integrates with TUnit's assertion engine — failures appear as assertion e
 Access the raw call history for custom inspection:
 
 ```csharp
-var calls = Mock.GetInvocations(mock);
+var calls = mock.Invocations;
 
 await Assert.That(calls).HasCount().EqualTo(3);
 await Assert.That(calls[0].MemberName).IsEqualTo("GetUser");
